@@ -9,13 +9,17 @@ class Fajar{
         Fajar(int p_umur, string p_univ){
             Fajar::umur=p_umur;
             Fajar::univ=p_univ;
-
-            cout<<"Umur : "<<Fajar::umur<<endl;
-            cout<<"Univ : "<<Fajar::univ<<endl;
+        }
+        
+        //tanpa parameter dan return
+        void outputData(){
+            cout<<"Umur saya "<<umur<<" tahun"<<endl;
+            cout<<"dan sedang kuliah di "<<univ<<endl;
         }
 };
 int main(){
     Fajar datanya1=Fajar(19, "Universitas Ahmad Dahlan");
     Fajar datanya2=Fajar(22, "Universitas Atma Jaya");
+    datanya1.outputData();
     return 0;
 }
